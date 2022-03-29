@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "d343b358-3859-4b41-b384-f036ade63c70",
+		"name": "nestjs-grpc-microservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"rahul@email.com\", \n    \"password\": \"rahul\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"rahul@email.com\", \n    \"password\": \"rahul\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiZW1haWwiOiJyYWh1bEBlbWFpbC5jb20iLCJpYXQiOjE2NDg1MzczNzUsImV4cCI6MTY4MDA3MzM3NX0.sIxJWwBYIi4hpK1R8woXeXVe8ndQ-OmRaMP4qMTthXQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Test C\", \n    \"sku\": \"A00007\", \n    \"price\": 6, \n    \"stock\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product by ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiZW1haWwiOiJyYWh1bEBlbWFpbC5jb20iLCJpYXQiOjE2NDg1MzczNzUsImV4cCI6MTY4MDA3MzM3NX0.sIxJWwBYIi4hpK1R8woXeXVe8ndQ-OmRaMP4qMTthXQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/product/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order by Product ID",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiZW1haWwiOiJyYWh1bEBlbWFpbC5jb20iLCJpYXQiOjE2NDg1MzczNzUsImV4cCI6MTY4MDA3MzM3NX0.sIxJWwBYIi4hpK1R8woXeXVe8ndQ-OmRaMP4qMTthXQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productId\": 3, \n    \"quantity\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
