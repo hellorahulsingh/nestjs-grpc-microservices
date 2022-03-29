@@ -43,7 +43,7 @@ Installation Guide
 
 ## Documentation
 
-[POSTMAN COLLECTION](https://github.com/hellorahulsingh/nestjs-grpc-microservices/blob/master/nestjs-grpc-microservices.postman_collection.json)
+[Postman Collection](https://github.com/hellorahulsingh/nestjs-grpc-microservices/blob/master/nestjs-grpc-microservices.postman_collection.json)
 
 
     
